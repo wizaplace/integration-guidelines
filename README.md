@@ -32,23 +32,23 @@ D'autres éléments peuvent être ajoutés en fonction des besoins du client, pa
 Exemple de code html :
 ```html
 <article class="product" data-id="1_23">
-	{# flags #}
-	<div class="flags">
-		<div class="promo">Promotion</div>
-		<div class="new">Nouveauté</div>
-	</div>
+    {# flags #}
+    <div class="flags">
+        <div class="promo">Promotion</div>
+        <div class="new">Nouveauté</div>
+    </div>
 
-	{# main image #}
-	<div class="image">
-		<img src="/crayon-laser.jpg" alt="Decription de l'image">
-	</div>
+    {# main image #}
+    <div class="image">
+        <img src="/crayon-laser.jpg" alt="Decription de l'image">
+    </div>
 
-	{# product details #}
-	<div class="name">Crayon laser</div>
-	<div class="description">Mieux que le tournevis sonique du docteur Who.</div>
-	<div class="price">159,99€ TTC</div>
+    {# product details #}
+    <div class="name">Crayon laser</div>
+    <div class="description">Mieux que le tournevis sonique du docteur Who.</div>
+    <div class="price">159,99€ TTC</div>
 
-	<button class="add-to-basket"><i class="icon icon-basket"></i></button>
+    <button class="add-to-basket"><i class="icon icon-basket"></i></button>
 </article>
 ```
 

@@ -8,7 +8,7 @@ Les mots composés sont séparés par des tirets.
 ## Chargement des bibliothèques
 
 Toutes les bibliothèques tierces doivent être téléchargées en local.
-Pour Bootstrap, cela permettra notamment de surcharger les variables.
+Pour Bootstrap, cela permettra notamment de surcharger les variables Less.
 
 ## Carousel
 

@@ -69,7 +69,7 @@ Exemple de code html :
 
 A noter :
 
-- la classe `add-to-basket` et l'attribut `data-id` de l'émément bouton sont utilisés par javascript pour mettre à jour le panier.
+- la classe `add-to-basket` et l'attribut `data-id` de l'élément bouton sont utilisés par javascript pour mettre à jour le panier.
 
 - dans l'éventualité où le produit n'a pas d'image, on remplace l'élément `<img>` par : `<div class="no-image">Pas d'image</div>`.
 
@@ -78,8 +78,3 @@ Le style de cet élément doit alors avoir une dimension et un aspect semblables
 ### Menu principal
 
 Le menu principal présente en général le menu des catégories et les liens vers les pages importantes.
-
-### Menu des catégories
-
-#### Menu des catégories
-TODO: Créer un template de départ -> html / JS et LESS

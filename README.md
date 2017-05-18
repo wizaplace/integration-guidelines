@@ -1,4 +1,4 @@
-# integration-guidelines
+# Guidelines d'intégration
 
 ## Généralités
 
@@ -19,7 +19,7 @@ Exemples :
 ## Chargement des bibliothèques
 
 Toutes les bibliothèques tierces doivent être téléchargées en local.
-Pour Bootstrap, cela permettra notamment de surcharger les variables.
+Pour Bootstrap, cela permettra notamment de surcharger les variables Less.
 
 ## Carousel
 
@@ -44,6 +44,7 @@ Elle comprend généralement l'image principale du produit, son nom, son prix, l
 D'autres éléments peuvent être ajoutés en fonction des besoins du client, par exemple la catégorie du produit ou encore sa description.
 
 Exemple de code html :
+
 ```html
 <article class="product" data-id="1_23">
     {# flags #}
@@ -67,14 +68,18 @@ Exemple de code html :
 ```
 
 A noter :
-- la classe `add-to-basket` et l'attribut `data-id` de l'élément bouton sont utilisés par javascript pour mettre à jour le panier.
+
+- la classe `add-to-basket` et l'attribut `data-id` de l'émément bouton sont utilisés par javascript pour mettre à jour le panier.
 
 - dans l'éventualité où le produit n'a pas d'image, on remplace l'élément `<img>` par : `<div class="no-image">Pas d'image</div>`.
+
 Le style de cet élément doit alors avoir une dimension et un aspect semblables à l'emplacement qu'aurait dû occuper l'image.
 
 ### Menu principal
 
 Le menu principal présente en général le menu des catégories et les liens vers les pages importantes.
+
+### Menu des catégories
 
 #### Menu des catégories
 TODO: Créer un template de départ -> html / JS et LESS

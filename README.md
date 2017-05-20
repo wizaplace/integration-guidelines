@@ -78,3 +78,30 @@ Le style de cet élément doit alors avoir une dimension et un aspect semblables
 ### Menu principal
 
 Le menu principal présente en général le menu des catégories et les liens vers les pages importantes.
+
+## Bibliothèque Wizaplace
+
+Afin de résoudre les questions qui reviennent pour chaque nouveau projet, la bibliothèque javascript Wizaplace fournit des outils simples qui peuvent venir en renfort de bibliothèque tierces comme Bootstrap.
+
+### Reveal
+
+Ce composant permet de cacher ou révéler un élément du DOM, un peu à la manière du composant 'dropdown' de Bootstrap.
+Pour l'accessibilité, la valeur de l'attribut `aria-expanded` est mise à jour automatiquement en fonction de l'état de l'élément à cacher/révéler.
+Il s'utilise de manière similaire aux composants de Bootstrap de type 'dropdown' mais propose plus d'options.
+Il permet de choisir l'évènement déclencheur ("click" ou "hover") et il est également possible de paramétrer l'effet d'apparition/disparition de l'élément concerné.
+```html
+<div class="reveal">
+    <a href="#" class="reveal-pop" aria-haspopup="true" aria-expanded="false" id="demo-id">Mon compte</a>    
+    <div class="reveal-content" aria-labelledby="quick-access-user">Contenu caché par défaut.</div>
+</div>
+```
+
+Pour que le système soit déclenchable, il faut que :
+- l'élément parent aie la classe `reveal`,
+- l'élément déclencheur aie une classe indiquant le type d'animation `reveal-type-pop` ou `reveal-type-progressive`,
+- l'élément à cacher/révéler aie la classe `reveal-content`.
+
+Par défaut, `reveal-type-pop` se déclenche au survol de la souris alors que `reveal-type-progressive` se déclenche au clic.
+Ce comportement est paramétrable :
+- de manière globale via les constantes `REVEAL.TRIGGER.POP` et `REVEAL.TRIGGER.PROGRESSIVE`,
+- indépendamment, en ajoutant la classe `reveal-trigger-click` ou `reveal-trigger-hover` sur l'élément déclencheur pour obtenir le comportement correspondant.

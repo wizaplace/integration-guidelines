@@ -96,12 +96,40 @@ Il permet de choisir l'évènement déclencheur ("click" ou "hover") et il est �
 </div>
 ```
 
-Pour que le système soit déclenchable, il faut que :
-- l'élément parent aie la classe `reveal`,
-- l'élément déclencheur aie une classe indiquant le type d'animation `reveal-type-pop` ou `reveal-type-progressive`,
-- l'élément à cacher/révéler aie la classe `reveal-content`.
+Pour que le système soit déclenchable, il faut minimum que :
+- l'élément parent aie la classe `.reveal`,
+- l'élément déclencheur aie une classe `.reveal-trigger`,
+- l'élément à cacher/révéler aie la classe `.reveal-content`.
 
-Par défaut, `reveal-type-pop` se déclenche au survol de la souris alors que `reveal-type-progressive` se déclenche au clic.
-Ce comportement est paramétrable :
-- de manière globale via les constantes `REVEAL.TRIGGER.POP` et `REVEAL.TRIGGER.PROGRESSIVE`,
-- indépendamment, en ajoutant la classe `reveal-trigger-click` ou `reveal-trigger-hover` sur l'élément déclencheur pour obtenir le comportement correspondant.
+#### Les effets visuels
+L'apparition du contenu peut prendre **plusieurs aspects** :
+- le contenu apparaît **instantanément** (`.reveal-pop`),
+- le contenu apparaît **progressivement** (`.reveal-fade`),
+- le contenu apparaît progressivement **vers le bas** (`.reveal-down`),  
+- le contenu apparaît progressivement et **cache les autres éléments** visibles du groupe (`.reveal-accordion`).
+
+La classe correspondant à l'effet choisi doit être appliquée à l'élément parent du groupe (`.reveal`), par exemple `.reveal-down` :
+```html
+<div class="reveal reveal-down">
+    <a href="#" class="reveal-pop"> [...]</a>
+</div>
+```
+
+Si aucune de ces classes n'est appliquée en supplément de `.reveal`, alors **l'effet par défaut est `.reveal-pop`**.
+Ce comportement est paramétrable de manière globale sur chacun des types d'évènement déclencheur, en modifiant le fichier `settings.js` de la bibliothèque Wizaplace.
+
+#### Les évènements déclencheurs
+
+Deux évènements peuvent **déclencher** l'apparition ou la disparition du contenu du groupe :
+- au **clic** (`.reveal-click`) sur l'élément déclencheur (`.reveal-trigger`),
+- au **survol** (`.reveal-hover`) de ce même élément.
+
+La classe correspondant à l'évènement choisi doit être appliquée à l'élément déclencheur du groupe (`.reveal-trigger`), par exemple `.reveal-hover` :
+```html
+<div class="reveal">
+    <a href="#" class="reveal-pop reveal-hover" aria-haspopup="true" aria-expanded="false" id="demo-id">Mon compte</a>    
+    [...]
+</div>
+```
+Si aucune de ces classes n'est appliquée en supplément de `.reveal-trigger`, alors **l'évènement déclencheur par défaut est `.reveal-click`**.
+Ce comportement est paramétrable de manière globale sur chacun des types d'effet, en modifiant le fichier `settings.js` de la bibliothèque Wizaplace.

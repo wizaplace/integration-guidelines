@@ -116,7 +116,10 @@ La classe correspondant à l'effet choisi doit être appliquée à l'élément p
 ```
 
 Si aucune de ces classes n'est appliquée en supplément de `.reveal`, alors **l'effet par défaut est `.reveal-pop`**.
-Ce comportement est paramétrable de manière globale sur chacun des types d'évènement déclencheur, en modifiant le fichier `settings.js` de la bibliothèque Wizaplace.
+Ce comportement est paramétrable de manière globale sur chacun des types d'évènement déclencheur, en modifiant le fichier `config.js` de la bibliothèque Wizaplace.
+
+Les vitesses des effets de type `fade`, `down`, `accordion` sont également paramétrables via le fichier `config.js` de la bibliothèque Wizaplace.
+L'unité de mesure de ces vitesses est la milliseconde.
 
 #### Les évènements déclencheurs
 
@@ -132,4 +135,4 @@ La classe correspondant à l'évènement choisi doit être appliquée à l'élé
 </div>
 ```
 Si aucune de ces classes n'est appliquée en supplément de `.reveal-trigger`, alors **l'évènement déclencheur par défaut est `.reveal-click`**.
-Ce comportement est paramétrable de manière globale sur chacun des types d'effet, en modifiant le fichier `settings.js` de la bibliothèque Wizaplace.
+Ce comportement est paramétrable de manière globale sur chacun des types d'effet, en modifiant le fichier `config.js` de la bibliothèque Wizaplace.

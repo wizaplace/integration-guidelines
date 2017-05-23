@@ -130,7 +130,7 @@ Deux évènements peuvent **déclencher** l'apparition ou la disparition du cont
 La classe correspondant à l'évènement choisi doit être appliquée à l'élément déclencheur du groupe (`.reveal-trigger`), par exemple `.reveal-hover` :
 ```html
 <div class="reveal">
-    <a href="#" class="reveal-pop reveal-hover" aria-haspopup="true" aria-expanded="false" id="demo-id">Mon compte</a>    
+    <a href="#" class="reveal-trigger reveal-hover" aria-haspopup="true" aria-expanded="false" id="demo-id">Mon compte</a>    
     [...]
 </div>
 ```

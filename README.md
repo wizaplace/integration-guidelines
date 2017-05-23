@@ -81,7 +81,7 @@ Le menu principal présente en général le menu des catégories et les liens ve
 
 ## Bibliothèque Wizaplace
 
-Afin de résoudre les questions qui reviennent pour chaque nouveau projet, la bibliothèque javascript Wizaplace fournit des outils simples qui peuvent venir en renfort de bibliothèque tierces comme Bootstrap.
+Afin de résoudre les questions qui reviennent pour chaque nouveau projet, la bibliothèque javascript Wizaplace fournit des outils simples qui peuvent venir en renfort de bibliothèques tierces comme Bootstrap.
 
 ### Reveal
 

@@ -28,7 +28,7 @@ Afin de rester homogène entre les différents projets, nous utilisons systémat
 
 ## Fonts
 
-Les polices de caractère doivent également être téléchargée en local.
+Les polices de caractères doivent également être téléchargées en local.
 
 ### Icones
 

@@ -69,7 +69,7 @@ Exemple de code html :
 
 A noter :
 
-- la classe `add-to-basket` et l'attribut `data-id` de l'élément bouton sont utilisés par javascript pour mettre à jour le panier.
+- la classe `add-to-basket` du bouton et l'attribut `data-id` de l'élément `article` sont utilisés par javascript pour mettre à jour le panier.
 
 - dans l'éventualité où le produit n'a pas d'image, on remplace l'élément `<img>` par : `<div class="no-image">Pas d'image</div>`.
 

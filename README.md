@@ -120,7 +120,7 @@ Les images doivent être enregistrées dans un format compatible web, avec des d
 
 La réalisation de sites fronts en se basant sur le StarterKit ne nécessite pas énormément de développements PHP. En effet le StarterKit fournit une base d'application fonctionnelle. Cependant certaines fonctionnalités ne sont pas implémentées dans le StarterKit et peuvent nécessiter du développement PHP/Symfony.
 
-Dans les contrôleurs il est nécessaire de minimiser le nombre d'appels à l'API Wizaplace afin de ne pas allonger les temps de chargement des pages. Dans un cas normal nous visons 1 ou 2 appels API par page.
+Dans les contrôleurs il est nécessaire de minimiser le nombre d'appels à l'API Wizaplace afin de ne pas allonger les temps de chargement des pages. Dans un cas normal nous visons 1 ou 2 appels API par page. Une stratégie pour éviter trop d'appels API dans les contrôleurs PHP est de déplacer certains chargements en AJAX, par exemple des mises en avant de produits sur la page d'accueil.
 
 Le code PHP doit respecter [le standard de code](https://github.com/wizaplace/php-coding-standard) basé sur PSR-2 et le standard Symfony.
 
